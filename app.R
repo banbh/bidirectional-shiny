@@ -12,7 +12,10 @@ ui <- fluidPage(
     "What you type into the Centigrade input is converted to Fahrenheit",
     "rounded to", round_digits, "digits and vice versa for what's typed into",
     "the Fahrenheit input. This illustrates a solution to the classic bidirectional",
-    "binding problem (or circular update loop or two-way input synchronisation)."
+    "binding problem (or circular update loop or two-way input synchronisation).",
+    "For more details see the",
+    a("GitHub repo", href = "https://github.com/banbh/bidirectional-shiny"),
+    "."
   ),
   numericInput('cent', 'Centigrade', value = start_cent),
   numericInput('fahr', 'Fahrenheit', value = start_fahr)
